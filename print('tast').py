@@ -1,2 +1,0 @@
-print('tast')
-print('a')
