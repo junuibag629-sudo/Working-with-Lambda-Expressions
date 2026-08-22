@@ -12,6 +12,7 @@ plus_ten = lambda x: x + 10
 plus_ten(1)
 
 - 함수 비교 코드
+
 def plus_ten(x):
      return x + 10
     
@@ -42,6 +43,7 @@ a = [8, 3, 2, 10, 15, 7, 1, 9, 0, 11]
 list(filter(lambda x: x > 5 and x < 10, a))
 
 함수 비교 코드
+
 def f(x):
     return x > 5 and x < 10
 
@@ -62,6 +64,7 @@ from functools import reduce
 reduce(lambda x, y: x + y, a)
 
 - 함수 비교 코드
+
 def f(x, y):
     return x + y
 
