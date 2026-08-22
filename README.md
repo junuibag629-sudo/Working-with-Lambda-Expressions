@@ -42,7 +42,7 @@ list(map(lambda x, y: x * y, a, b))
 a = [8, 3, 2, 10, 15, 7, 1, 9, 0, 11]
 list(filter(lambda x: x > 5 and x < 10, a))
 
-함수 비교 코드
+- 함수 비교 코드
 
 def f(x):
     return x > 5 and x < 10
