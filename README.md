@@ -10,6 +10,12 @@
 lambda x: x + 10
 plus_ten = lambda x: x + 10
 plus_ten(1)
+
+- 함수 비교 코드
+def plus_ten(x):
+     return x + 10
+    
+plus_ten(1)
 ```
 결과
 11
@@ -29,19 +35,40 @@ list(map(lambda x, y: x * y, a, b))
 
 #### filter 사용하기
 - filter는 반복 가능한 객체 특정 조건에 맞는 요소만 사용하여 True만 가져옴
+
+- 예시 코드
 ```
 a = [8, 3, 2, 10, 15, 7, 1, 9, 0, 11]
 list(filter(lambda x: x > 5 and x < 10, a))
+
+함수 비교 코드
+def f(x):
+    return x > 5 and x < 10
+
+a = [8, 3, 2, 10, 15, 7, 1, 9, 0, 11]
+list(filter(f, a))
+
 결과
 [8, 7, 9]
 ```
 
 #### reduce 사용하기
 - reduce는 반복 가능한 객체를 함수로 처리한 뒤 누적해서 반환함
+
+- 예시 코드
 ```
 a = [1, 2, 3, 4, 5]
 from functools import reduce
 reduce(lambda x, y: x + y, a)
+
+- 함수 비교 코드
+def f(x, y):
+    return x + y
+
+a = [1, 2, 3, 4, 5]
+from functools import reduce
+reduce(f, a)
+
 결과
 15
 ```
